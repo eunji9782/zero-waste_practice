@@ -16,17 +16,14 @@
             list-style: none;
         }
 
-
-
         div {
             box-sizing: border-box;
-            border: 1px solid gray;
         }
 
         .all {
             margin: auto;
             width: 1600px;
-            height: 1000px;
+            height: 1600px;
 
         }
 
@@ -36,9 +33,7 @@
         }
 
         #header {
-            height: 15%;
-            /* position: fixed; */
-
+            height: 9.5%;
         }
 
         #content {
@@ -46,16 +41,14 @@
         }
 
         #footer {
-            /* position: fixed; */
-            height: 15%;
+            height: 9.5%;
             background-color: black;
             color: aliceblue;
             text-align: center;
             font-size: small;
             line-height: 1.5;
             padding-top: 5px;
-
-
+            margin-top: 175px;
         }
 
         #header>div,
@@ -123,22 +116,16 @@
         }
 
         .nav li {
-
-
-            padding: 20px;
-
-            height: 100%;
             margin: 25px 10px;
             display: block;
             text-align: center;
             float: left;
-            background-color: black;
-
-
         }
 
         .nav a {
 
+            padding: 20px;
+            background-color: black;
             font-family: 'Do Hyeon', sans-serif;
             text-decoration: none;
             font-size: 25px;
@@ -151,37 +138,10 @@
 
         }
 
-        .nav li:hover {
+        .nav a:hover {
             background-color: darkgreen;
-        }
 
-        #img1 {
-            text-align: center;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 50px;
-            width: 30%;
-            float: left;
 
-        }
-
-        #img2 {
-            text-align: center;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 50px;
-            width: 28.5%;
-            float: left;
-
-        }
-
-        #img3 {
-            text-align: center;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 50px;
-            width: 25.5%;
-            float: left;
         }
 
         #text1 {
@@ -197,13 +157,17 @@
             padding-top: 100px;
         }
 
+        #zero2 {
+            padding-left: 100px;
+            padding-top: 150px;
+        }
+
 
         .caption-list {
             margin-left: 90px;
             padding-left: 50px;
 
         }
-
 
         .caption-list>li {
 
@@ -221,25 +185,90 @@
             width: 350px;
 
         }
-        #d1{
-            padding-top: 340px;
-            padding-left: 1200px;
+
+        #d1 {
+            padding-top: 80px;
+            padding-left: 800px;
             font-size: x-small;
         }
-        
+
+        #btnPlay {
+            width: 28%;
+            margin-top: 1265px;
+            margin-left: 65px;
+        }
+
+        #container {
+            width: 1000px;
+            margin: 50px auto;
+        }
+
+        .pro-list {
+            padding: 0;
+        }
+
+        .pro-list li {
+            float: left;
+            margin: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .caption {
+            position: absolute;
+            top: 200px;
+            /* 기준 위치보다 200px 아래로 */
+            width: 300px;
+            height: 200px;
+            padding-top: 60px;
+            background: rgba(0, 0, 0, 0.6);
+            /* 반투명한 검정 배경 */
+            opacity: 0;
+            /* 화면에 보이지 않게 */
+            transition: all 0.6s ease-in-out;
+            /* 나타날 때 부드럽게 트랜지션 추가 */
+
+        }
+
+        .pro-list li:hover .caption {
+            /*호버링하면 캡션이 동작하는*/
+            opacity: 1;
+            /* 설명글이 화면에 보이게 */
+            transform: translateY(-200px);
+            /* 설명글이 위로 200px 이동하게 */
+        }
+
+        .caption h2 {
+            color: #fff;
+            text-align: center;
+        }
+
+        #content1 {
+            margin-top: 200px;
+        }
+
+        #content3 {
+            margin-bottom: 50px;
+
+        }
     </style>
+    <script>
+        var audio = new Audio('/resource/Afterschool.mp3');
+    </script>
 </head>
 
 <body>
     <div class="all">
         <div id="header">
-            <div id="header_1"><a href="http://221.165.162.199:5500/%EB%A9%94%EC%9D%B8.html"><img id="logo" src="/resource/zero-waste.png" alt=""></a></div>
+            <div id="header_1"><a href="http://221.165.162.199:5500/%EB%A9%94%EC%9D%B8.html"><img id="logo"
+                        src="/resource/zero-waste.png" alt=""></a></div>
             <div id="header_2"></div>
             <div class="nav">
                 <ul>
                     <li><a href="http://221.165.162.199:5500/%EC%A0%9C%EB%A1%9C%EC%9B%A8%EC%9D%B4%EC%8A%A4%ED%8A%B8%EB%9E%80.html"
                             id="menu1">제로웨이스트란?</a></li>
-                    <li><a href="http://221.165.162.199:5500/%EC%9A%B0%EB%A6%AC%EA%B0%80%ED%95%A0%EC%88%98%EC%9E%88%EB%8A%94%EC%9D%BC.html" id="menu2">우리가 할 수 있는 일</a></li>
+                    <li><a href="http://221.165.162.199:5500/%EC%9A%B0%EB%A6%AC%EA%B0%80%ED%95%A0%EC%88%98%EC%9E%88%EB%8A%94%EC%9D%BC.html"
+                            id="menu2">우리가 할 수 있는 일</a></li>
                     <li><a href="http://221.165.162.199:5500/%EC%BA%A0%ED%8E%98%EC%9D%B8.html" id="menu3">캠페인</a></li>
                 </ul>
             </div>
@@ -254,33 +283,70 @@
                     위한 일련의 활동입니다.
                     <br>제로 웨이스트 활동가들은 일회용품을 줄이고 재사용 제품과 친환경 제품을 적극 이용하여 필요 이상의 폐기물이 나오지 않도록 노력하고 있죠!<br>점점 이런 활동가들이 늘어가고
                     있는 추세입니다.
-                    그 이유는 무엇일까요?<br><br><br><br>매년 지구는 심각한 환경문제를 일으켜 이제 우리의 생활까지 위협해온 상황입니다. 바로 우리가 무심코 버린 쓰레기와 낭비되는 자원 때문이죠.
-                        이 책임없는 소비는 많은 생물들과 동물들의 터전을 빼앗아 지구의 공기와 환경을 오염시켜 결국 우리의 삶까지도 지속 가능하지 못할 미래로 인도할 수 있습니다. <br>이러한 이유로 제로웨이스트 활동을 통해 더 이상의 피해를 줄이기 위해서죠!
-                       
+                    그 이유는 무엇일까요?
+
                 </p>
 
+                <div id="container">
+                    <ul class="pro-list">
+                        <li>
+                            <img src="/resource/joshua-woroniecki--L9Ek3MS_rc-unsplash.jpg">
+                            <div class="caption">
+                                <h2>기후위기</h2>
 
-                <ul class="caption-list">
-                    <li>
-                        <img id=img1 src="/resource/joshua-woroniecki--L9Ek3MS_rc-unsplash.jpg" alt="">
-                    </li>
-                    <li>
-                        <img id=img2 src="/resource/nick-fewings--2lJGRIY5P0-unsplash.jpg" alt="">
-                    </li>
-                    <li>
-                        <img id=img3 src="/resource/naja-bertolt-jensen-BJUoZu0mpt0-unsplash.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/resource/nick-fewings--2lJGRIY5P0-unsplash - 복사본.jpg">
+                            <div class="caption">
+                                <h2>재활용되지 않는 플라스틱</h2>
 
-                    </li>
-                </ul>
-                
-                <div id="d1">출처 : 위키백과</div>
-                
-                
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/resource/naja-bertolt-jensen-BJUoZu0mpt0-unsplash - 복사본.jpg">
+                            <div class="caption">
+                                <h2>해양쓰레기</h2>
 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
+                <div id="content1">
+                    <h3 id="zero2">심각한 기후위기</h3>
+                    <p id="text1">폭우와 폭설, 혹서와 혹한. 지금 이 순간에도 기후위기의 징후는 온 지구에서 나타나고 있습니다. <br>매년 지구는 심각한 환경문제를 일으켜 이제 우리의
+                        생활까지 위협해온 상황입니다. 바로 우리가 무심코 버린 쓰레기와 낭비되는 자원 때문이죠.
+                        이 책임없는 소비는 많은 생물들과 동물들의 터전을 빼앗아 지구의 공기와 환경을 오염시켜 결국 우리의 삶까지도 지속 가능하지 못할 미래로 인도할 것입니다.
 
+                    </p>
+                </div>
+                <div id="content2">
+                    <h3 id="zero1">편리하지만 위험한. 플라스틱</h3>
+                    <p id="text1">20세기를 주도한 기술 중 하나인 플라스틱은 이제 인류의 삶을 지배하는 물질이 됐습니다.
+                        <br>그런데 인간의 삶을 한없이 편리하고 윤택하게 해줄 것만 같았던 이 플라스틱이 인간과 뭇생명에게 치명적 환경오염의 역습으로 다가오고 있습니다.<br>2017년 일본의
+                        해양과학기구에서 지난 30여년간 해저 쓰레기를 조사한 결과, 플라스틱, 철, 고무, 낚시 장비 등을 포함해 3000가지의 인간이 만든 쓰레기가 발견됐다고 합니다. 그
+                        쓰레기의 3분의 1은 대형 플라스틱이며 그 중 89%는 일회용 제품에서 발생한 것이죠.
+                        수심 6000m 보다 깊은 곳도 반 이상이 플라스틱으로 덮여 있었고 대부분이 일회용 플라스틱이었다고 합니다. 이제 일회용 플라스틱은 상상을 초월할 정도로 널리 퍼져있습니다.
+                        <br>이 플라스틱은 바다로 흘러가 분해되기까지는 약 1000년의 세월이 걸립니다.
+
+                    </p>
+                </div>
+                <div id="content3">
+                    <h3 id="zero1">지구에는 우리만 살고있지 않으니까</h3>
+                    <p id="text1"><i>'환경오염으로 지구가 위험하다고? 글쎄 내가 죽기 전에는 괜찮지 않을까?'</i><br>우리 주변에서 쉽게 들을 수 있는 말입니다. 정말로 당신이
+                        살아있는 동안에는 괜찮아 보일지도 모르죠. 하지만 우리가 무분별하게 버린 쓰레기로 미래의 우리. 그리고 많은 생명들의 터전과 목숨을 앗아간다고 생각해보세요. 그때에는
+                        누구에게 책임을 물을 수 있을까요?
+
+                    </p>
+
+                </div>
+                <div id="d1">출처 : 위키백과, 천지일보-[환경칼럼] 플라스틱은 어떻게 지구를 오염시키고 있을까?</div>
             </div>
-            <div id="content_3"></div>
+            <div id="content_3">
+                <button id="btnPlay" onclick="audio.play();">재생</button>
+                <button id="btnPause" onclick="audio.pause();">정지</button>
+            </div>
         </div>
 
         <div id="footer">

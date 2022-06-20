@@ -20,7 +20,6 @@
 
         div {
             box-sizing: border-box;
-            border: 1px solid gray;
         }
 
         .all {
@@ -123,22 +122,16 @@
         }
 
         .nav li {
-
-
-            padding: 20px;
-
-            height: 100%;
             margin: 25px 10px;
             display: block;
             text-align: center;
             float: left;
-            background-color: black;
-
-
         }
 
         .nav a {
 
+            padding: 20px;
+            background-color: black;
             font-family: 'Do Hyeon', sans-serif;
             text-decoration: none;
             font-size: 25px;
@@ -151,27 +144,9 @@
 
         }
 
-        .nav li:hover {
+        .nav a:hover {
             background-color: darkgreen;
-        }
 
-        #img1 {
-            text-align: center;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 50px;
-            width: 30%;
-            float: left;
-
-        }
-
-        #img2 {
-            text-align: center;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 50px;
-            width: 28.5%;
-            float: left;
 
         }
 
@@ -179,9 +154,10 @@
             text-align: center;
             padding-left: 10px;
             padding-right: 10px;
-            padding-top: 50px;
-            width: 25.5%;
+            padding-top: 33px;
             float: left;
+            width: 470px;
+            margin-left: 190px;
         }
 
         #text1 {
@@ -210,21 +186,17 @@
             display: inline;
         }
 
-        #img3{
-            width: 470px;
-            margin-left: 190px;
-
-        }
+        
 
         
         form {
-            padding-top: 60px ;
+            padding-top: 35px ;
             padding-left: 800px ;
             
         }
         form div {
-            margin-left: 2px;
-            width: 300px;
+            margin-left: 10px;
+            width: 287px;
             height: 50px;
         }
 
@@ -232,8 +204,21 @@
             width: 100%;
             height: 100%;
         }
+        #textbox{
+            margin-left: 10px;
+        }
+        #btnPlay {
+            width: 28%;
+            margin-top: 670px;
+            margin-left: 65px;
+        }
+      
         
     </style>
+    <script>
+        
+        var audio = new Audio('/resource/Afterschool.mp3');
+    </script>
 </head>
 
 <body>
@@ -256,28 +241,27 @@
             <div id="content_1"></div>
             <div id="content_2">
                 <h3 id="zero1">지금 진행중인 캠페인에 참여해보세요!</h3>
-                <p id="text1"><br>여러분의 제로웨이스트 활동과 아이디어를 공유해주세요! 추첨을 통해 6월 특별 콘텐츠에 소개될 예정입니다!&nbsp;<small>&#60;~2022년 6월 20일까지&#62;</small></p>
+                <p id="text1"><br>여러분의 제로웨이스트 활동과 아이디어를 공유해주세요! 추첨을 통해 7월 특별 콘텐츠에 소개될 예정입니다!&nbsp;<small>&#60;~2022년 6월 20일까지&#62;</small></p>
 
                 <img id=img3 src="resource/다운로드.jpg" alt="">
 
-                <form action="11" method="post">
-                    <textarea name="msg" rows="25" cols="40">내용과 이메일을 적어주세요!</textarea>
-                    <div><input id = "submit" type="submit" value="보내기"></div>
+                <form action="" method="post">
+                    <p id><small>제로 웨이스트 활동을 시작한 지 얼마나 되셨나요?</small></p>
+                    <input type="radio" name="period" value="1" checked><small>1개월 미만</small>
+                    <input type="radio" name="period" value="13"><small>1개월~3개월</small>
+                    <input type="radio" name="period" value="36"><small>3개월~6개월</small>
+                    <input type="radio" name="period" value="60"><small>6개월 이상</small>
+                    <br><br>
+                    <textarea id="textbox" name="msg" rows="20" cols="38" placeholder="내용과 이메일을 적어주세요!" required></textarea>
+                    <div><input id = "submit" type="submit" value="보내기" onclick="alert('해당 캠페인은 6월 20일에 종료되었습니다!')"></div>
 
                 </form>
-                
-                
-
-                
-                
-                
-                
-                
-
-
 
             </div>
-            <div id="content_3"></div>
+            <div id="content_3">
+                <button id="btnPlay" onclick="audio.play();">재생</button>
+                <button id="btnPause" onclick="audio.pause();">정지</button>
+            </div>
         </div>
 
         <div id="footer">
