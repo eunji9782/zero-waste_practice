@@ -16,17 +16,10 @@
             list-style: none;
         }
 
-
-
-        div {
-            box-sizing: border-box;
-        }
-
         .all {
             margin: auto;
             width: 1600px;
             height: 1080px;
-
         }
 
         /* 모든 요소 100% */
@@ -36,8 +29,6 @@
 
         #header {
             height: 15%;
-            /* position: fixed; */
-
         }
 
         #content {
@@ -45,7 +36,6 @@
         }
 
         #footer {
-            /* position: fixed; */
             height: 14.5%;
             margin-top: 5px;
             background-color: black;
@@ -54,9 +44,6 @@
             font-size: small;
             line-height: 1.5;
             padding-top: 5px;
-           
-
-
         }
 
         #header>div,
@@ -64,8 +51,6 @@
         #footer>div {
             height: 100%;
             float: left;
-
-
         }
 
         .nav {
@@ -83,7 +68,6 @@
 
         #content_1 {
             width: 10%;
-
         }
 
         #content_2 {
@@ -118,7 +102,6 @@
 
             list-style-type: none;
             height: 100%;
-
             padding: 0px;
             margin: 0px;
         }
@@ -131,7 +114,6 @@
         }
 
         .nav a {
-
             padding: 20px;
             background-color: black;
             font-family: 'Do Hyeon', sans-serif;
@@ -143,16 +125,13 @@
             display: block;
             width: 100%;
             height: 100%;
-
         }
 
         .nav a:hover {
             background-color: darkgreen;
-
-
         }
 
-        
+
 
         #text1 {
             margin-top: 300px;
@@ -160,8 +139,6 @@
             padding-left: 180px;
             padding-right: 100px;
             font-size: smaller;
-
-
         }
 
         #zero1 {
@@ -185,8 +162,8 @@
             width: 12%;
             float: left;
             border-radius: 30%;
-
         }
+
         #img3 {
             margin-top: 60px;
             margin-left: 50px;
@@ -194,8 +171,8 @@
             width: 12%;
             float: left;
             border-radius: 30%;
-
         }
+
         #img4 {
             margin-top: 60px;
             margin-left: 50px;
@@ -203,8 +180,8 @@
             width: 12%;
             float: left;
             border-radius: 30%;
-
         }
+
         #img5 {
             margin-top: 60px;
             margin-left: 50px;
@@ -212,8 +189,8 @@
             width: 12%;
             float: left;
             border-radius: 30%;
-
         }
+
         #img6 {
             margin-top: 60px;
             margin-left: 50px;
@@ -221,26 +198,26 @@
             width: 12%;
             float: left;
             border-radius: 30%;
-
         }
+
         .image:hover {
             transition: 2s;
             transform: rotate(360deg);
         }
-        #d1{
+
+        #d1 {
             padding-top: 50px;
             padding-left: 300px;
             font-size: x-small;
         }
+
         #btnPlay {
             width: 28%;
             margin-top: 730px;
             margin-left: 65px;
         }
-
     </style>
     <script>
-        
         var audio = new Audio('/resource/Afterschool.mp3');
     </script>
 </head>
@@ -248,13 +225,15 @@
 <body>
     <div class="all">
         <div id="header">
-            <div id="header_1"><a href="http://221.165.162.199:5500/%EB%A9%94%EC%9D%B8.html"><img id="logo" src="/resource/zero-waste.png" alt=""></a></div>
+            <div id="header_1"><a href="http://221.165.162.199:5500/%EB%A9%94%EC%9D%B8.html"><img id="logo" src="/resource/zero-waste.png" alt="로고"></a>
+                </div>
             <div id="header_2"></div>
             <div class="nav">
                 <ul>
                     <li><a href="http://221.165.162.199:5500/%EC%A0%9C%EB%A1%9C%EC%9B%A8%EC%9D%B4%EC%8A%A4%ED%8A%B8%EB%9E%80.html"
                             id="menu1">제로웨이스트란?</a></li>
-                    <li><a href="http://221.165.162.199:5500/%EC%9A%B0%EB%A6%AC%EA%B0%80%ED%95%A0%EC%88%98%EC%9E%88%EB%8A%94%EC%9D%BC.html" id="menu2">우리가 할 수 있는 일</a></li>
+                    <li><a href="http://221.165.162.199:5500/%EC%9A%B0%EB%A6%AC%EA%B0%80%ED%95%A0%EC%88%98%EC%9E%88%EB%8A%94%EC%9D%BC.html"
+                            id="menu2">우리가 할 수 있는 일</a></li>
                     <li><a href="http://221.165.162.199:5500/%EC%BA%A0%ED%8E%98%EC%9D%B8.html" id="menu3">캠페인</a></li>
                 </ul>
             </div>
@@ -265,32 +244,30 @@
             <div id="content_1"></div>
             <div id="content_2">
                 <h3 id="zero1">우리가 할 수 있는 일</h3>
-                <img class ="image" id="img1" src="/resource/andrik-langfield-f49LVNZsTYc-unsplash.jpg" alt="">
-                
-                <img class ="image"id="img2" src="/resource/gaelle-marcel-g917EoHF-Ls-unsplash.jpg" alt="">
-                <img class ="image"id="img3" src="/resource/aurelia-dubois-6J0MUsmS4fQ-unsplash.jpg" alt="">
-                <img class ="image"id="img4" src="/resource/sara-groblechner-Q0eia3UG5TQ-unsplash.jpg" alt="">
-                <img class ="image"id="img5" src="/resource/nacho-fernandez-gFixufaXB0k-unsplash.jpg" alt="">
-                <img class ="image"id="img6" src="/resource/ecopanda-cklPUTpgbI4-unsplash.jpg" alt="">
-                <p id="text1"><b style="color: darkgreen;">텀블러 사용하기</b> : 카페에서 음료를 구매할 때 받는 일회용 플라스틱 컵, 종이컵 등은 들고가기 가볍고 버리기 편합니다. <br>하지만 이런 컵들이 모여 결국 약 1000년의 세월이 흘러도 썩지 않는 채로 
+                <img class="image" id="img1" src="/resource/andrik-langfield-f49LVNZsTYc-unsplash.jpg" alt="이미지1">
+                <img class="image" id="img2" src="/resource/gaelle-marcel-g917EoHF-Ls-unsplash.jpg" alt="이미지2">
+                <img class="image" id="img3" src="/resource/aurelia-dubois-6J0MUsmS4fQ-unsplash.jpg" alt="이미지3">
+                <img class="image" id="img4" src="/resource/sara-groblechner-Q0eia3UG5TQ-unsplash.jpg" alt="이미지4">
+                <img class="image" id="img5" src="/resource/nacho-fernandez-gFixufaXB0k-unsplash.jpg" alt="이미지5">
+                <img class="image" id="img6" src="/resource/ecopanda-cklPUTpgbI4-unsplash.jpg" alt="이미지6">
+                <p id="text1"><b style="color: darkgreen;">텀블러 사용하기</b> : 카페에서 음료를 구매할 때 받는 일회용 플라스틱 컵, 종이컵 등은 들고가기 가볍고
+                    버리기 편합니다. <br>하지만 이런 컵들이 모여 결국 약 1000년의 세월이 흘러도 썩지 않는 채로
                     우리 지구 어딘가에 방치되게 하죠. 외출할 때 나만의 예쁜 텀블러를 들고 다닌다면 기분 전환과 환경 둘다 잡을 수 있지 않을까요? (다회용 빨대 역시 추천해요!)
-                    <br><br><b style="color: darkgreen;">장바구니 사용하기</b> : 비닐봉지 역시 잘 썩지 않아 하나의 환경오염 주범입니다. 이 비닐이 바다로 흘러가게 되면 해양 생물들이 목숨을 잃을 수 있고 바다 어딘가에 쌓일 수 있죠.
+                    <br><br><b style="color: darkgreen;">장바구니 사용하기</b> : 비닐봉지 역시 잘 썩지 않아 하나의 환경오염 주범입니다. 이 비닐이 바다로 흘러가게
+                    되면 해양 생물들이 목숨을 잃을 수 있고 바다 어딘가에 쌓일 수 있죠.
                     이미 수심 6000m 보다 깊은 곳도 일회용 쓰레기로 가득 차 있다는 사실 알고 계시나요?
-                    <br><br><b style="color: darkgreen;">분해가 쉬운 재질의 물건 사용하기</b> : 미세플라스틱이 없는 다회용 화장솜, 생분해 키친타월, 옥수수 망사 수세미, 대나무 칫솔 등의 자연으로 돌아가기 쉬운 재질의 물건을 사용해봐요! 똑같은 기능인데도
+                    <br><br><b style="color: darkgreen;">분해가 쉬운 재질의 물건 사용하기</b> : 미세플라스틱이 없는 다회용 화장솜, 생분해 키친타월, 옥수수 망사
+                    수세미, 대나무 칫솔 등의 자연으로 돌아가기 쉬운 재질의 물건을 사용해봐요! 똑같은 기능인데도
                     환경을 더 위하는 선택지가 있습니다.
-                    <br><br><b style="color: darkgreen;">분리수거 신경쓰기</b> : 분리수거에도 지식이 필요합니다. 팩은 팩끼리, 유리는 유리끼리, 플라스틱은 플라스틱끼리 같은 재질끼리 모아 분리수거합니다. <br>
+                    <br><br><b style="color: darkgreen;">분리수거 신경쓰기</b> : 분리수거에도 지식이 필요합니다. 팩은 팩끼리, 유리는 유리끼리, 플라스틱은
+                    플라스틱끼리 같은 재질끼리 모아 분리수거합니다. <br>
                     분리수거 가능한 재질이어도 두 가지 이상의 재질이 섞여있는 것은 재활용되지 않습니다. 비닐에 종이가 붙어있다면 종이 부분만 오려 따로 분리해서 버리도록 해요!
-                    <br><br><b style="color: darkgreen;">불필요한 포장용기 줄이기</b> : 이미 많은 기업들이 제로웨이스트에 동참해 분해가 쉬운 친환경 재료로 상품을 패키징하고 있습니다. 
+                    <br><br><b style="color: darkgreen;">불필요한 포장용기 줄이기</b> : 이미 많은 기업들이 제로웨이스트에 동참해 분해가 쉬운 친환경 재료로 상품을
+                    패키징하고 있습니다.
                     <br>다양한 상품들이 많으니 필요한 화장품이나 세면도구, 식료품 등이 있다면 해당 기업들의 상품을 찾아보시는 것을 추천드려요! 생각보다 손쉽게 찾을 수 있답니다!
                 </p>
-                <div id="d1">출처 : 유튜브-[진데이]초보 제로웨이스트 실천 꿀팁, 마리끌레르 - 제로 웨이스트를 실천하는 방법, 아트인사이트 - [에세이] 30년 뒤에 사라지고 싶지 않으니까, 제로웨이스트!</div>
-                
-
-                
-                
-                
-
-
+                <div id="d1">출처 : 유튜브-[진데이]초보 제로웨이스트 실천 꿀팁, 마리끌레르 - 제로 웨이스트를 실천하는 방법, 아트인사이트 - [에세이] 30년 뒤에 사라지고 싶지
+                    않으니까, 제로웨이스트!</div>
 
             </div>
             <div id="content_3">

@@ -16,17 +16,10 @@
             list-style: none;
         }
 
-
-
-        div {
-            box-sizing: border-box;
-        }
-
         .all {
             margin: auto;
             width: 1600px;
             height: 1000px;
-
         }
 
         /* 모든 요소 100% */
@@ -36,8 +29,6 @@
 
         #header {
             height: 15%;
-            /* position: fixed; */
-
         }
 
         #content {
@@ -45,7 +36,6 @@
         }
 
         #footer {
-            /* position: fixed; */
             height: 15%;
             background-color: black;
             color: aliceblue;
@@ -53,8 +43,6 @@
             font-size: small;
             line-height: 1.5;
             padding-top: 5px;
-
-
         }
 
         #header>div,
@@ -62,13 +50,10 @@
         #footer>div {
             height: 100%;
             float: left;
-
-
         }
 
         .nav {
             width: 40%;
-
         }
 
         #header_1 {
@@ -81,7 +66,6 @@
 
         #content_1 {
             width: 10%;
-
         }
 
         #content_2 {
@@ -113,10 +97,8 @@
         }
 
         .nav {
-
             list-style-type: none;
             height: 100%;
-
             padding: 0px;
             margin: 0px;
         }
@@ -129,7 +111,6 @@
         }
 
         .nav a {
-
             padding: 20px;
             background-color: black;
             font-family: 'Do Hyeon', sans-serif;
@@ -141,13 +122,10 @@
             display: block;
             width: 100%;
             height: 100%;
-
         }
 
         .nav a:hover {
             background-color: darkgreen;
-
-
         }
 
         #img3 {
@@ -164,8 +142,6 @@
             padding-left: 100px;
             padding-right: 100px;
             font-size: smaller;
-
-
         }
 
         #zero1 {
@@ -177,12 +153,10 @@
         .caption-list {
             margin-left: 90px;
             padding-left: 50px;
-
         }
 
 
         .caption-list>li {
-
             display: inline;
         }
 
@@ -192,8 +166,8 @@
         form {
             padding-top: 35px ;
             padding-left: 800px ;
-            
         }
+
         form div {
             margin-left: 10px;
             width: 287px;
@@ -204,19 +178,18 @@
             width: 100%;
             height: 100%;
         }
+
         #textbox{
             margin-left: 10px;
         }
+
         #btnPlay {
             width: 28%;
             margin-top: 670px;
             margin-left: 65px;
         }
-      
-        
     </style>
     <script>
-        
         var audio = new Audio('/resource/Afterschool.mp3');
     </script>
 </head>
@@ -224,7 +197,7 @@
 <body>
     <div class="all">
         <div id="header">
-            <div id="header_1"><a href="http://221.165.162.199:5500/%EB%A9%94%EC%9D%B8.html"><img id="logo" src="/resource/zero-waste.png" alt=""></a></div>
+            <div id="header_1"><a href="http://221.165.162.199:5500/%EB%A9%94%EC%9D%B8.html"><img id="logo" src="/resource/zero-waste.png" alt="로고"></a></div>
             <div id="header_2"></div>
             <div class="nav">
                 <ul>
@@ -242,9 +215,7 @@
             <div id="content_2">
                 <h3 id="zero1">지금 진행중인 캠페인에 참여해보세요!</h3>
                 <p id="text1"><br>여러분의 제로웨이스트 활동과 아이디어를 공유해주세요! 추첨을 통해 7월 특별 콘텐츠에 소개될 예정입니다!&nbsp;<small>&#60;~2022년 6월 20일까지&#62;</small></p>
-
-                <img id=img3 src="resource/다운로드.jpg" alt="">
-
+                <img id=img3 src="resource/다운로드.jpg" alt="캠패인이미지">
                 <form action="" method="post">
                     <p id><small>제로 웨이스트 활동을 시작한 지 얼마나 되셨나요?</small></p>
                     <input type="radio" name="period" value="1" checked><small>1개월 미만</small>
@@ -254,7 +225,6 @@
                     <br><br>
                     <textarea id="textbox" name="msg" rows="20" cols="38" placeholder="내용과 이메일을 적어주세요!" required></textarea>
                     <div><input id = "submit" type="submit" value="보내기" onclick="alert('해당 캠페인은 6월 20일에 종료되었습니다!')"></div>
-
                 </form>
 
             </div>
